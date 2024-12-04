@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]">
+  <test thread-count="5" parallel="tests" name="TestStaging(failed)">
+    <parameter name="property" value="staging.properties"/>
+    <classes>
+      <class name="script.DemoTest">
+        <methods>
+          <include name="postCondition"/>
+          <include name="testDemo"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.DemoTest -->
+      <class name="script.DemoTest2">
+        <methods>
+          <include name="postCondition"/>
+          <include name="testDemo2"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- script.DemoTest2 -->
+    </classes>
+  </test> <!-- TestStaging(failed) -->
+</suite> <!-- Failed suite [Suite] -->
